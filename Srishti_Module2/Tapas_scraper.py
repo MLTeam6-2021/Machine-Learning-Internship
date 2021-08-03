@@ -17,8 +17,8 @@ class WebScraper:
         'Category',
         'Leading Post',
         'Post Replies',
-        'Created_at',
-        'Replies',
+        'Created at',
+        'Num Replies',
     ])
 
 
@@ -161,8 +161,8 @@ class WebScraper:
                             'Category': topic_category,
                             'Leading Post': leading_comment,
                             'Post Replies': other_comments,
-                            'Created_at': created_at,
-                            'Replies': nbr_replies}
+                            'Created at': created_at,
+                            'Num Replies': nbr_replies}
                 
                 self.topicDict[topic_title] = attributeDict
                 self.topicDataframe = self.topicDataframe.append(attributeDict, ignore_index=True)
